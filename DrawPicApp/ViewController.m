@@ -214,6 +214,7 @@
     // 描画を終了します。
     UIGraphicsEndImageContext();
 }
+//subviewの入れ替えなどで絵画モードとテキストモードの切り替え
 - (IBAction)pDrawButton:(id)sender {
    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
     int i=0;
