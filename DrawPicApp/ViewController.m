@@ -40,7 +40,6 @@
     NSLog(@"text1 is %@", NSStringFromClass([text1 class]));
     NSLog(@"self.view is %@", NSStringFromClass([self.view class]));
     
-    //
     int i=0;
     for(i=0;i<self.view.subviews.count;i++){
         NSLog(@"subview[%d] is %@",i, NSStringFromClass([self.view.subviews[i] class]));
