@@ -6,15 +6,6 @@
 //  Copyright © 2016年 野村和也. All rights reserved.
 //
 
-//@implementation AWCollectionViewDialLayout
-//
-//#import "UserProfile.h"
-//
-//@interface UserProfileVC ()
-//
-//@end
-//
-//@implementation AWCollectionViewDialLayout
 
 #import "UserProfileVC.h"
 #import "AWCollectionViewDialLayout.h"
