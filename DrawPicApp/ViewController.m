@@ -41,9 +41,9 @@
     NSLog(@"self.view is %@", NSStringFromClass([self.view class]));
     
     int i=0;
-    for(i=0;i<self.view.subviews.count;i++){
+    /*for(i=0;i<self.view.subviews.count;i++){
         NSLog(@"subview[%d] is %@",i, NSStringFromClass([self.view.subviews[i] class]));
-    }
+    }*/
     
     // ボタンのenabledを設定します
     self.undoButton.enabled = NO;
@@ -54,7 +54,6 @@
     flag=1;
     self.changeLabel.userInteractionEnabled=NO;
     self.canvas.userInteractionEnabled = YES;
-    NSLog(@"test");
 }
 
 - (void)didReceiveMemoryWarning {
