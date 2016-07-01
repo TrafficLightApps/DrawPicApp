@@ -4,4 +4,6 @@ target 'DrawPicApp' do
 pod "AWCollectionViewDialLayout"
 pod "KYGooeyMenu",'~>1.0.5'
 pod "ACEDrawingView"
+pod "Color-Picker-for-iOS", "~> 2.0"
+
 end
