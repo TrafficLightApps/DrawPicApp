@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,28 +18,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHC-Y2-19K" customClass="ACEDrawingView">
-                                <rect key="frame" x="20" y="20" width="335" height="627"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xh3-55-V4c" customClass="XXXRoundMenuButton">
-                                        <rect key="frame" x="246" y="536" width="195" height="195"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xh3-55-V4c" customClass="XXXRoundMenuButton">
+                                        <rect key="frame" x="252" y="526" width="225" height="217"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="Xh3-55-V4c" firstAttribute="leading" secondItem="aHC-Y2-19K" secondAttribute="leading" constant="246" id="50K-xN-4fE"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xh3-55-V4c" secondAttribute="bottom" constant="-104" id="J9G-qq-6nY"/>
-                                    <constraint firstItem="Xh3-55-V4c" firstAttribute="top" secondItem="aHC-Y2-19K" secondAttribute="top" constant="536" id="QOI-ZQ-Wdt"/>
-                                    <constraint firstAttribute="trailing" secondItem="Xh3-55-V4c" secondAttribute="trailing" constant="-106" id="w5O-lk-7GM"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aHC-Y2-19K" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Hpf-ZG-LXa"/>
-                            <constraint firstAttribute="bottom" secondItem="aHC-Y2-19K" secondAttribute="bottom" constant="20" symbolic="YES" id="KBY-sa-1l6"/>
-                            <constraint firstItem="aHC-Y2-19K" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="qSH-aN-L7T"/>
-                            <constraint firstItem="aHC-Y2-19K" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="u4w-iy-RsH"/>
+                            <constraint firstItem="aHC-Y2-19K" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="KfZ-MC-bwH"/>
+                            <constraint firstItem="aHC-Y2-19K" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="crK-gM-Xob"/>
+                            <constraint firstItem="aHC-Y2-19K" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="jKd-X5-AvH"/>
+                            <constraint firstAttribute="trailing" secondItem="aHC-Y2-19K" secondAttribute="trailing" id="nnX-D2-R4v"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
