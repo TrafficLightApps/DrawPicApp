@@ -21,6 +21,7 @@
 @implementation ViewController{
     KYGooeyMenu *gooeyMenu;
     UIColor *usrClr;
+    double usrWidth;
     NSArray *colorArray;
     int clrCount;
 }
@@ -41,6 +42,10 @@
     [self setColor];
     clrCount=2;
     usrClr=colorArray[clrCount];
+    
+    usrWidth=2.0;
+    
+    self.drawingView.lineWidth=usrWidth;
     self.drawingView.lineColor =usrClr;
     [self setupMenu];
     
@@ -64,6 +69,8 @@
 
 - (void)setupMenu{
     [self.roundMenu loadButtonWithIcons:@[[UIImage imageNamed:@"playback_ff_icon"],
+                                          [UIImage imageNamed:@"sq_down_icon"],
+                                          [UIImage imageNamed:@"sq_up_icon"],
                                           [UIImage imageNamed:@"playback_rew_icon"],
                                            ] startDegree:-M_PI layoutDegree:M_PI/2];
     [self.roundMenu setButtonClickBlock:^(NSInteger idx) {
@@ -77,6 +84,20 @@
                 break;
                 
             case 1:
+                usrWidth-=0.5;
+                if(usrWidth<0.3) {
+                    usrWidth=0.3;
+                }
+                self.drawingView.lineWidth=usrWidth;
+                break;
+            case 2:
+                usrWidth+=0.5;
+                if(usrWidth>10.0) {
+                    usrWidth=10.0;
+                }
+                self.drawingView.lineWidth=usrWidth;
+                break;
+            case 3:
                 clrCount=(clrCount-1)%13;
                 if(clrCount==-1){clrCount=12;}
                 NSLog(@"%d",clrCount);
