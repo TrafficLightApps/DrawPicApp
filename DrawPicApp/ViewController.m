@@ -10,7 +10,8 @@
 #import "KYGooeyMenu.h"
 #import "ACEDrawingView.h"
 #import "XXXRoundMenuButton.h"
-
+#import <Social/Social.h>
+#import "DropdownMenuController.h"
 
 @interface ViewController ()<menuDidSelectedDelegate>
 @property (strong, nonatomic) IBOutlet ACEDrawingView *drawingView;
@@ -30,12 +31,13 @@
     [super viewDidLoad];
     gooeyMenu = [[KYGooeyMenu alloc]initWithOrigin:CGPointMake(CGRectGetMidX(self.view.frame)-50, 600) andDiameter:100.0f andDelegate:self themeColor:[UIColor cyanColor]];
     gooeyMenu.menuDelegate = self;
-    gooeyMenu.radius = 100/4;//大圆的1/4
+    gooeyMenu.radius = 100/5;//大圆的1/4
     gooeyMenu.extraDistance = 20;
-    gooeyMenu.MenuCount = 4;
+    gooeyMenu.MenuCount = 5;
     gooeyMenu.menuImagesArray =  [NSMutableArray arrayWithObjects:
                                   [UIImage imageNamed:@"playback_ff_icon"],
                                   [UIImage imageNamed:@"pencil_icon"],
+                                  [UIImage imageNamed:@"twitter_2_icon"],
                                   [UIImage imageNamed:@"doc_new_icon"],
                                   [UIImage imageNamed:@"playback_rew_icon"],nil];
 
@@ -51,6 +53,13 @@
     
 }
 
+-(void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // Customize your menubar programmatically here.
+
+}
+
 -(void)menuDidSelected:(int)index{
     switch (index) {
         case 1:
@@ -58,10 +67,16 @@
             break;
         case 2:
             
+            break;
+            
         case 3:
+            [self twtImage];
+            break;
+            
+        case 4:
             [self.drawingView clear];
             break;
-        case 4:
+        case 5:
             [self.drawingView undoLatestStep];
 
     }
@@ -137,6 +152,27 @@
     UIColor *c12 = [UIColor purpleColor];
     UIColor *c13 = [UIColor brownColor];
     colorArray = [NSArray arrayWithObjects:c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, c13, nil];
+}
+
+-(void)twtImage{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
+        SLComposeViewController *composeViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        if (composeViewController) {
+            [composeViewController addImage:self.drawingView.image];
+            NSString *initialTextString = @"#oekaki";
+            [composeViewController setInitialText:initialTextString];
+            [composeViewController setCompletionHandler:^(SLComposeViewControllerResult result) {
+                if (result == SLComposeViewControllerResultDone) {
+                    NSLog(@"Posted");
+                } else if (result == SLComposeViewControllerResultCancelled) {
+                    NSLog(@"Post Cancelled");
+                } else {
+                    NSLog(@"Post Failed");
+                }
+            }];
+            [self presentViewController:composeViewController animated:YES completion:nil];
+        }
+    }
 }
 
 

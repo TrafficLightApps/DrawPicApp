@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E53EEEFC1D25A4F800785FDD /* XXXRoundMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E53EEEFB1D25A4F800785FDD /* XXXRoundMenuButton.m */; };
+		E53EEEFE1D263C8400785FDD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53EEEFD1D263C8400785FDD /* Social.framework */; };
 		E7ECF0AF1B7DD45F0087E302 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECF0AE1B7DD45F0087E302 /* main.m */; };
 		E7ECF0B21B7DD45F0087E302 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECF0B11B7DD45F0087E302 /* AppDelegate.m */; };
 		E7ECF0B51B7DD45F0087E302 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECF0B41B7DD45F0087E302 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 		DCFE2366505010DC4FDC062F /* Pods-DrawPicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawPicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawPicApp/Pods-DrawPicApp.release.xcconfig"; sourceTree = "<group>"; };
 		E53EEEFA1D25A4F800785FDD /* XXXRoundMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXXRoundMenuButton.h; path = ../../XXXRoundMenuButton/Views/XXXRoundMenuButton.h; sourceTree = "<group>"; };
 		E53EEEFB1D25A4F800785FDD /* XXXRoundMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXXRoundMenuButton.m; path = ../../XXXRoundMenuButton/Views/XXXRoundMenuButton.m; sourceTree = "<group>"; };
+		E53EEEFD1D263C8400785FDD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E7ECF0A91B7DD45F0087E302 /* DrawPicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ECF0AD1B7DD45F0087E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7ECF0AE1B7DD45F0087E302 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53EEEFE1D263C8400785FDD /* Social.framework in Frameworks */,
 				F52CACEC08AD1590A4922DF3 /* Pods_DrawPicApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +154,7 @@
 		F46B3C2ECE64F472A6CA1A9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E53EEEFD1D263C8400785FDD /* Social.framework */,
 				F4F571C4EEAEED1EE33CB087 /* Pods_DrawPicApp.framework */,
 			);
 			name = Frameworks;
