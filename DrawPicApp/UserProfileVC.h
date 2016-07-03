@@ -1,16 +1,16 @@
 //
-//  UserProfileVC.h
-//  DrawPicApp
+//  ViewController.h
+//  AWCollectionViewDialLayoutDemo
 //
-//  Created by  Ryuki Uetsugu on 2016/06/30.
-//  Copyright © 2016年 野村和也. All rights reserved.
+//  Created by Antoine Wette on 14.03.14.
+//  Copyright (c) 2014 Antoine Wette. All rights reserved.
 //
-
 
 #import <UIKit/UIKit.h>
 
-@interface UserProfileVC : UIViewController
+@interface UserProfileVC : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editBtn;
 
-@property (strong, nonatomic) IBOutlet UIView *view;
-
+@property NSArray *items;
 @end
