@@ -250,6 +250,9 @@ static NSString *cellId2 = @"cellId2";
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%@",indexPath);
+    
+    
+    NSLog(@"Write the method when you tap one collection item");
 }
 
 - (UIEdgeInsets)collectionView:
