@@ -5,113 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ey4-ef-foy">
-            <objects>
-                <viewController id="18C-5D-d0e" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RY5-rm-FF8"/>
-                        <viewControllerLayoutGuide type="bottom" id="EVO-zU-Ne0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DGI-Q0-lfv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qoz-up-bRv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-A5-DHw">
-                                <rect key="frame" x="23" y="544" width="34" height="30"/>
-                                <state key="normal" title="back">
-                                    <color key="titleColor" red="0.97861842109999997" green="0.41493626639999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="undoButtonPlessed:" destination="18C-5D-d0e" eventType="touchUpInside" id="Up3-Zn-Q1Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8l-Qv-eOD">
-                                <rect key="frame" x="23" y="594" width="31" height="30"/>
-                                <state key="normal" title="redo">
-                                    <color key="titleColor" red="0.97861842109999997" green="0.41493626639999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="redoButtonPlessed:" destination="18C-5D-d0e" eventType="touchUpInside" id="86r-Kj-45y"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="●" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="to2-uB-Aw7">
-                                <rect key="frame" x="16" y="479" width="45" height="57"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.97861842109999997" green="0.41493626639999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCR-aT-1Cj">
-                                <rect key="frame" x="314" y="594" width="45" height="30"/>
-                                <state key="normal" title="clear">
-                                    <color key="titleColor" red="0.97861842109999997" green="0.41493626639999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clearButtonPlessed:" destination="18C-5D-d0e" eventType="touchUpInside" id="RYW-or-G0w"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJG-k7-O8G">
-                                <rect key="frame" x="319" y="544" width="34" height="30"/>
-                                <state key="normal" title="draw">
-                                    <color key="titleColor" red="0.97861842109999997" green="0.41493626639999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pDrawButton:" destination="18C-5D-d0e" eventType="touchUpInside" id="RrE-fv-Nbf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-Qk-Zmg">
-                                <rect key="frame" x="321" y="493" width="30" height="30"/>
-                                <state key="normal" title="text">
-                                    <color key="titleColor" red="0.97861842109999997" green="0.41493626639999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pTextButton:" destination="18C-5D-d0e" eventType="touchUpInside" id="ZYr-tv-mn0"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="canvas" destination="Qoz-up-bRv" id="Jxd-34-7Hs"/>
-                        <outlet property="changeLabel" destination="to2-uB-Aw7" id="OvE-K6-bmX"/>
-                        <outlet property="drawButton" destination="sJG-k7-O8G" id="1iR-zE-YMp"/>
-                        <outlet property="redoButton" destination="e8l-Qv-eOD" id="Dar-Iq-UFw"/>
-                        <outlet property="textButton" destination="wtm-Qk-Zmg" id="HPH-WQ-Wpd"/>
-                        <outlet property="undoButton" destination="XLI-A5-DHw" id="fGU-Yy-Pl9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U9Z-fD-qxQ" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="277.5" y="322.5"/>
-        </scene>
-        <!--Collection View Dial Layout-->
-        <scene sceneID="riW-zh-pvg">
-            <objects>
-                <viewController id="3qS-DV-8XA" customClass="AWCollectionViewDialLayout" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7mO-hA-HsV"/>
-                        <viewControllerLayoutGuide type="bottom" id="2C6-hp-JTf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D7h-g2-Qcf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RdN-GH-eOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="736" y="1114"/>
-        </scene>
         <!--User ProfileVC-->
         <scene sceneID="dEw-hT-JtN">
             <objects>
@@ -178,6 +71,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOA-m6-g6l" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="935.5" y="308.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MpH-h7-xVP">
+            <objects>
+                <viewController id="YJl-MP-jGg" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fM5-o2-0PV"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFz-fF-QP0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2O-70-S8i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hl-Kx-fDB" customClass="ACEDrawingView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOQ-Zz-85j" customClass="XXXRoundMenuButton">
+                                        <rect key="frame" x="252" y="526" width="225" height="217"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8hl-Kx-fDB" firstAttribute="top" secondItem="fM5-o2-0PV" secondAttribute="bottom" id="XET-OB-bbz"/>
+                            <constraint firstItem="8hl-Kx-fDB" firstAttribute="leading" secondItem="d2O-70-S8i" secondAttribute="leading" id="ZpK-vU-02h"/>
+                            <constraint firstItem="8hl-Kx-fDB" firstAttribute="bottom" secondItem="dFz-fF-QP0" secondAttribute="top" id="bW2-C1-KyH"/>
+                            <constraint firstAttribute="trailing" secondItem="8hl-Kx-fDB" secondAttribute="trailing" id="dc2-Hh-Hjb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="drawingView" destination="8hl-Kx-fDB" id="dGe-gO-Xfw"/>
+                        <outlet property="roundMenu" destination="HOQ-Zz-85j" id="NZD-g1-m6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37a-xl-J9L" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.5" y="322.5"/>
         </scene>
     </scenes>
 </document>
