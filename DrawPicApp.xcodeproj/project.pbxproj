@@ -16,8 +16,17 @@
 		E7ECF0BA1B7DD45F0087E302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7ECF0B91B7DD45F0087E302 /* Images.xcassets */; };
 		E7ECF0BD1B7DD45F0087E302 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7ECF0BB1B7DD45F0087E302 /* LaunchScreen.xib */; };
 		E7ECF0C91B7DD45F0087E302 /* DrawPicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */; };
+		F4B9E13A1D29831400A0C4B9 /* AWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */; };
+		F4B9E1411D29869800A0C4B9 /* dialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13B1D29869800A0C4B9 /* dialCell.xib */; };
+		F4B9E1421D29869800A0C4B9 /* dialCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13C1D29869800A0C4B9 /* dialCell2.xib */; };
+		F4B9E1431D29869800A0C4B9 /* dwayne_wade.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13D1D29869800A0C4B9 /* dwayne_wade.png */; };
+		F4B9E1441D29869800A0C4B9 /* james_harden.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13E1D29869800A0C4B9 /* james_harden.png */; };
+		F4B9E1451D29869800A0C4B9 /* kevin_durant.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13F1D29869800A0C4B9 /* kevin_durant.png */; };
+		F4B9E1461D29869800A0C4B9 /* kyrie_irving.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E1401D29869800A0C4B9 /* kyrie_irving.png */; };
+		F4B9E1491D29872C00A0C4B9 /* UserProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9E1481D29872C00A0C4B9 /* UserProfileVC.m */; };
+		F4B9E14B1D29888400A0C4B9 /* iphone_settings_view.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E14A1D29888400A0C4B9 /* iphone_settings_view.xib */; };
+		F4B9E14D1D298BEC00A0C4B9 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E14C1D298BEC00A0C4B9 /* players.json */; };
 		F4CC84101D24427B009AB387 /* zo59nari.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CC840F1D24427B009AB387 /* zo59nari.Storyboard */; };
-		F4CC84121D244DA1009AB387 /* UserProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC84111D244DA1009AB387 /* UserProfileVC.m */; };
 		F52CACEC08AD1590A4922DF3 /* Pods_DrawPicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F571C4EEAEED1EE33CB087 /* Pods_DrawPicApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +59,19 @@
 		E7ECF0C21B7DD45F0087E302 /* DrawPicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ECF0C71B7DD45F0087E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPicAppTests.m; sourceTree = "<group>"; };
+		F4B9E1381D29831400A0C4B9 /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
+		F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
+		F4B9E13B1D29869800A0C4B9 /* dialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell.xib; sourceTree = "<group>"; };
+		F4B9E13C1D29869800A0C4B9 /* dialCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell2.xib; sourceTree = "<group>"; };
+		F4B9E13D1D29869800A0C4B9 /* dwayne_wade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dwayne_wade.png; sourceTree = "<group>"; };
+		F4B9E13E1D29869800A0C4B9 /* james_harden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = james_harden.png; sourceTree = "<group>"; };
+		F4B9E13F1D29869800A0C4B9 /* kevin_durant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kevin_durant.png; sourceTree = "<group>"; };
+		F4B9E1401D29869800A0C4B9 /* kyrie_irving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyrie_irving.png; sourceTree = "<group>"; };
+		F4B9E1471D29872C00A0C4B9 /* UserProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileVC.h; sourceTree = "<group>"; };
+		F4B9E1481D29872C00A0C4B9 /* UserProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileVC.m; sourceTree = "<group>"; };
+		F4B9E14A1D29888400A0C4B9 /* iphone_settings_view.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iphone_settings_view.xib; sourceTree = "<group>"; };
+		F4B9E14C1D298BEC00A0C4B9 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		F4CC840F1D24427B009AB387 /* zo59nari.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = zo59nari.Storyboard; sourceTree = "<group>"; };
-		F4CC84111D244DA1009AB387 /* UserProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileVC.m; sourceTree = "<group>"; };
-		F4CC84131D244DB5009AB387 /* UserProfileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileVC.h; sourceTree = "<group>"; };
 		F4F571C4EEAEED1EE33CB087 /* Pods_DrawPicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawPicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,14 +131,24 @@
 				E7ECF0B11B7DD45F0087E302 /* AppDelegate.m */,
 				E7ECF0B31B7DD45F0087E302 /* ViewController.h */,
 				E7ECF0B41B7DD45F0087E302 /* ViewController.m */,
-				F4CC84131D244DB5009AB387 /* UserProfileVC.h */,
-				F4CC84111D244DA1009AB387 /* UserProfileVC.m */,
 				E7ECF0B61B7DD45F0087E302 /* Main.storyboard */,
 				F4CC840F1D24427B009AB387 /* zo59nari.Storyboard */,
 				E7ECF0B91B7DD45F0087E302 /* Images.xcassets */,
 				E7ECF0BB1B7DD45F0087E302 /* LaunchScreen.xib */,
 				E53EEEFA1D25A4F800785FDD /* XXXRoundMenuButton.h */,
 				E53EEEFB1D25A4F800785FDD /* XXXRoundMenuButton.m */,
+				F4B9E13B1D29869800A0C4B9 /* dialCell.xib */,
+				F4B9E13C1D29869800A0C4B9 /* dialCell2.xib */,
+				F4B9E14A1D29888400A0C4B9 /* iphone_settings_view.xib */,
+				F4B9E13D1D29869800A0C4B9 /* dwayne_wade.png */,
+				F4B9E13E1D29869800A0C4B9 /* james_harden.png */,
+				F4B9E13F1D29869800A0C4B9 /* kevin_durant.png */,
+				F4B9E1401D29869800A0C4B9 /* kyrie_irving.png */,
+				F4B9E1471D29872C00A0C4B9 /* UserProfileVC.h */,
+				F4B9E1481D29872C00A0C4B9 /* UserProfileVC.m */,
+				F4B9E1381D29831400A0C4B9 /* AWCollectionViewDialLayout.h */,
+				F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */,
+				F4B9E14C1D298BEC00A0C4B9 /* players.json */,
 				E7ECF0AC1B7DD45F0087E302 /* Supporting Files */,
 			);
 			path = DrawPicApp;
@@ -244,7 +273,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7ECF0B81B7DD45F0087E302 /* Main.storyboard in Resources */,
+				F4B9E1411D29869800A0C4B9 /* dialCell.xib in Resources */,
+				F4B9E1431D29869800A0C4B9 /* dwayne_wade.png in Resources */,
+				F4B9E1421D29869800A0C4B9 /* dialCell2.xib in Resources */,
+				F4B9E1441D29869800A0C4B9 /* james_harden.png in Resources */,
+				F4B9E1461D29869800A0C4B9 /* kyrie_irving.png in Resources */,
 				E7ECF0BD1B7DD45F0087E302 /* LaunchScreen.xib in Resources */,
+				F4B9E14B1D29888400A0C4B9 /* iphone_settings_view.xib in Resources */,
+				F4B9E14D1D298BEC00A0C4B9 /* players.json in Resources */,
+				F4B9E1451D29869800A0C4B9 /* kevin_durant.png in Resources */,
 				E7ECF0BA1B7DD45F0087E302 /* Images.xcassets in Resources */,
 				F4CC84101D24427B009AB387 /* zo59nari.Storyboard in Resources */,
 			);
@@ -312,10 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B9E13A1D29831400A0C4B9 /* AWCollectionViewDialLayout.m in Sources */,
+				F4B9E1491D29872C00A0C4B9 /* UserProfileVC.m in Sources */,
 				E7ECF0B51B7DD45F0087E302 /* ViewController.m in Sources */,
 				E7ECF0B21B7DD45F0087E302 /* AppDelegate.m in Sources */,
 				E7ECF0AF1B7DD45F0087E302 /* main.m in Sources */,
-				F4CC84121D244DA1009AB387 /* UserProfileVC.m in Sources */,
 				E53EEEFC1D25A4F800785FDD /* XXXRoundMenuButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
