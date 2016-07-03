@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ONg-sL-VWp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vQq-kX-RPF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -93,28 +93,6 @@
             </objects>
             <point key="canvasLocation" x="277.5" y="322.5"/>
         </scene>
-        <!--UserProfileVC-->
-        <scene sceneID="sYl-ig-CTo">
-            <objects>
-                <viewController id="ONg-sL-VWp" userLabel="UserProfileVC" customClass="UserProfileVC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rny-Pq-Quh"/>
-                        <viewControllerLayoutGuide type="bottom" id="rfi-dC-VfR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cwr-C0-Nge">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="view" destination="cwr-C0-Nge" id="Bne-3r-YTn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ABx-dL-wlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="801.5" y="322.5"/>
-        </scene>
         <!--Collection View Dial Layout-->
         <scene sceneID="riW-zh-pvg">
             <objects>
@@ -133,6 +111,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RdN-GH-eOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="736" y="1114"/>
+        </scene>
+        <!--User ProfileVC-->
+        <scene sceneID="dEw-hT-JtN">
+            <objects>
+                <viewController id="vQq-kX-RPF" customClass="UserProfileVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ePI-MZ-ofJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="do7-fw-O7X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SGe-jJ-P46">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Een-n0-5sn">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7KK-d7-YYH">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vQq-kX-RPF" id="8Ty-kz-JaJ"/>
+                                    <outlet property="delegate" destination="vQq-kX-RPF" id="cS2-rT-zCY"/>
+                                </connections>
+                            </collectionView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnP-wR-zIM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.70588235290000001" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.70588235290000001" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="ALL-STAR GAME ROSTERS" id="tdi-t6-C7Q">
+                                        <barButtonItem key="rightBarButtonItem" title="Edit" style="plain" id="jfY-bo-QH9">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="do7-fw-O7X" firstAttribute="top" secondItem="Een-n0-5sn" secondAttribute="bottom" id="6ru-bs-Ndr"/>
+                            <constraint firstItem="KnP-wR-zIM" firstAttribute="leading" secondItem="Een-n0-5sn" secondAttribute="leading" id="Bem-Q9-Ncg"/>
+                            <constraint firstItem="KnP-wR-zIM" firstAttribute="trailing" secondItem="Een-n0-5sn" secondAttribute="trailing" id="Vnc-Vh-KrM"/>
+                            <constraint firstAttribute="trailing" secondItem="Een-n0-5sn" secondAttribute="trailing" id="YJL-z8-aIu"/>
+                            <constraint firstItem="Een-n0-5sn" firstAttribute="top" secondItem="KnP-wR-zIM" secondAttribute="bottom" id="k0b-Y5-tNW"/>
+                            <constraint firstItem="KnP-wR-zIM" firstAttribute="top" secondItem="ePI-MZ-ofJ" secondAttribute="bottom" id="oZu-It-6br"/>
+                            <constraint firstItem="Een-n0-5sn" firstAttribute="leading" secondItem="SGe-jJ-P46" secondAttribute="leading" id="uOw-tn-TQG"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Een-n0-5sn" id="oX8-Tp-hmS"/>
+                        <outlet property="editBtn" destination="jfY-bo-QH9" id="GD5-Rh-bFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOA-m6-g6l" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935.5" y="308.5"/>
         </scene>
     </scenes>
 </document>
