@@ -1,7 +1,7 @@
 platform :ios, '8.0'
 use_frameworks!
 target 'DrawPicApp' do
-pod "AWCollectionViewDialLayout"
+pod 'Async'
 pod "KYGooeyMenu",'~>1.0.5'
 pod "ACEDrawingView"
 pod "Color-Picker-for-iOS", "~> 2.0"

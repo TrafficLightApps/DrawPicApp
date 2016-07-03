@@ -8,7 +8,7 @@
 
 
 #import "UserProfileVC.h"
-#import "AWCollectionViewDialLayout.h"
+//#import "AWCollectionViewDialLayout.h"
 
 @interface UserProfileVC ()
 @end
