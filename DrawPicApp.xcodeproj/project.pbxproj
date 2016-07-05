@@ -17,8 +17,8 @@
 		E7ECF0BD1B7DD45F0087E302 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7ECF0BB1B7DD45F0087E302 /* LaunchScreen.xib */; };
 		E7ECF0C91B7DD45F0087E302 /* DrawPicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */; };
 		F4B9E13A1D29831400A0C4B9 /* AWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */; };
-		F4B9E1411D29869800A0C4B9 /* dialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13B1D29869800A0C4B9 /* dialCell.xib */; };
-		F4B9E1421D29869800A0C4B9 /* dialCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13C1D29869800A0C4B9 /* dialCell2.xib */; };
+		F4B9E1411D29869800A0C4B9 /* dialCell_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13B1D29869800A0C4B9 /* dialCell_2.xib */; };
+		F4B9E1421D29869800A0C4B9 /* dialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13C1D29869800A0C4B9 /* dialCell.xib */; };
 		F4B9E1431D29869800A0C4B9 /* dwayne_wade.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13D1D29869800A0C4B9 /* dwayne_wade.png */; };
 		F4B9E1441D29869800A0C4B9 /* james_harden.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13E1D29869800A0C4B9 /* james_harden.png */; };
 		F4B9E1451D29869800A0C4B9 /* kevin_durant.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13F1D29869800A0C4B9 /* kevin_durant.png */; };
@@ -61,8 +61,8 @@
 		E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPicAppTests.m; sourceTree = "<group>"; };
 		F4B9E1381D29831400A0C4B9 /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
 		F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
-		F4B9E13B1D29869800A0C4B9 /* dialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell.xib; sourceTree = "<group>"; };
-		F4B9E13C1D29869800A0C4B9 /* dialCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell2.xib; sourceTree = "<group>"; };
+		F4B9E13B1D29869800A0C4B9 /* dialCell_2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell_2.xib; sourceTree = "<group>"; };
+		F4B9E13C1D29869800A0C4B9 /* dialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell.xib; sourceTree = "<group>"; };
 		F4B9E13D1D29869800A0C4B9 /* dwayne_wade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dwayne_wade.png; sourceTree = "<group>"; };
 		F4B9E13E1D29869800A0C4B9 /* james_harden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = james_harden.png; sourceTree = "<group>"; };
 		F4B9E13F1D29869800A0C4B9 /* kevin_durant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kevin_durant.png; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 				E7ECF0BB1B7DD45F0087E302 /* LaunchScreen.xib */,
 				E53EEEFA1D25A4F800785FDD /* XXXRoundMenuButton.h */,
 				E53EEEFB1D25A4F800785FDD /* XXXRoundMenuButton.m */,
-				F4B9E13B1D29869800A0C4B9 /* dialCell.xib */,
-				F4B9E13C1D29869800A0C4B9 /* dialCell2.xib */,
+				F4B9E13B1D29869800A0C4B9 /* dialCell_2.xib */,
+				F4B9E13C1D29869800A0C4B9 /* dialCell.xib */,
 				F4B9E14A1D29888400A0C4B9 /* iphone_settings_view.xib */,
 				F4B9E13D1D29869800A0C4B9 /* dwayne_wade.png */,
 				F4B9E13E1D29869800A0C4B9 /* james_harden.png */,
@@ -273,9 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7ECF0B81B7DD45F0087E302 /* Main.storyboard in Resources */,
-				F4B9E1411D29869800A0C4B9 /* dialCell.xib in Resources */,
+				F4B9E1411D29869800A0C4B9 /* dialCell_2.xib in Resources */,
 				F4B9E1431D29869800A0C4B9 /* dwayne_wade.png in Resources */,
-				F4B9E1421D29869800A0C4B9 /* dialCell2.xib in Resources */,
+				F4B9E1421D29869800A0C4B9 /* dialCell.xib in Resources */,
 				F4B9E1441D29869800A0C4B9 /* james_harden.png in Resources */,
 				F4B9E1461D29869800A0C4B9 /* kyrie_irving.png in Resources */,
 				E7ECF0BD1B7DD45F0087E302 /* LaunchScreen.xib in Resources */,
