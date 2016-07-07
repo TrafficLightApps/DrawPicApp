@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NCMB.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // APIキーの設定とSDK初期化
+    [NCMB setApplicationKey:@"c34447c13130e1aa4dfced92fa928d834e60692e71a8f187abe01d9a47e2458b" clientKey:@"4026d49984f7cb9de05f2bbaf55a2dbc7494f7346921e455e3d56de1fae704f4"];
+        
+    NCMBQuery *query = [NCMBQuery queryWithClassName:@"TestClass"];
+    [query whereKey:@"message" equalTo:@"test"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error == nil) {
+            if ([objects count] > 0) {
+                NSLog(@"[FIND] %@", [[objects objectAtIndex:0] objectForKey:@"message"]);
+            } else {
+                NSError *saveError = nil;
+                NCMBObject *obj = [NCMBObject objectWithClassName:@"TestClass"];
+                [obj setObject:@"Hello, NCMB!" forKey:@"message"];
+                [obj save:&saveError];
+                if (saveError == nil) {
+                    NSLog(@"[SAVE] Done");
+                } else {
+                    NSLog(@"[SAVE-ERROR] %@", saveError);
+                }
+            }
+        } else {
+            NSLog(@"[ERROR] %@", error);
+        }
+    }];
+    
     return YES;
 }
 

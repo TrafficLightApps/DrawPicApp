@@ -8,6 +8,7 @@
 
 #import "UserProfileVC.h"
 #import "AWCollectionViewDialLayout.h"
+#import "NCMB.h"
 
 @interface UserProfileVC ()
 
@@ -82,7 +83,24 @@ static NSString *cellId = @"cellId";
     
     
     [collectionView reloadData];
-
+    
+    
+//    // クラスのNCMBObjectを作成
+//    NCMBObject *object = [NCMBObject objectWithClassName:@"TestClass"];
+//    
+//    // オブジェクトに値を設定
+//    [object setobject:@"Hello, NCMB!" forKey:@"message"];
+//    
+//    // データストアへの登録
+//    [object saveInBackgroundWithBlock:^(NSError *error) {
+//        if (error){
+//            // 保存に失敗した場合の処理
+//            
+//        } else {
+//            // 保存に成功した場合の処理
+//            
+//        }
+//    }];
     
 }
 

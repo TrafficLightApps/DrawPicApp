@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NCMB/NCMB.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

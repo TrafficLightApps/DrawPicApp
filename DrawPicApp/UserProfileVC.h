@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <NCMB/NCMB.h>
 
 @interface UserProfileVC : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

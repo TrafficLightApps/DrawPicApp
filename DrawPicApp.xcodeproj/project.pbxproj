@@ -59,6 +59,7 @@
 		E7ECF0C21B7DD45F0087E302 /* DrawPicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ECF0C71B7DD45F0087E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPicAppTests.m; sourceTree = "<group>"; };
+		F4B8DE031D2DE312003C1415 /* secret.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secret.pch; sourceTree = "<group>"; };
 		F4B9E1381D29831400A0C4B9 /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
 		F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
 		F4B9E13B1D29869800A0C4B9 /* dialCell_2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell_2.xib; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 			children = (
 				E7ECF0B01B7DD45F0087E302 /* AppDelegate.h */,
 				E7ECF0B11B7DD45F0087E302 /* AppDelegate.m */,
+				F4B8DE031D2DE312003C1415 /* secret.pch */,
 				E7ECF0B31B7DD45F0087E302 /* ViewController.h */,
 				E7ECF0B41B7DD45F0087E302 /* ViewController.m */,
 				F4B9E1471D29872C00A0C4B9 /* UserProfileVC.h */,
