@@ -180,5 +180,10 @@ static NSString *cellId = @"cellId";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)logOutButton:(id)sender {
+    [NCMBUser logOut];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"ログアウトしました");
+}
 
 @end
