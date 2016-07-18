@@ -16,6 +16,9 @@
 		E7ECF0BA1B7DD45F0087E302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7ECF0B91B7DD45F0087E302 /* Images.xcassets */; };
 		E7ECF0BD1B7DD45F0087E302 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7ECF0BB1B7DD45F0087E302 /* LaunchScreen.xib */; };
 		E7ECF0C91B7DD45F0087E302 /* DrawPicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */; };
+		F45CEA2E1D34924D00F8B19E /* UserLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45CEA2D1D34924D00F8B19E /* UserLoginVC.m */; };
+		F45CEA311D34928800F8B19E /* UserLogoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45CEA301D34928800F8B19E /* UserLogoutVC.m */; };
+		F45CEA331D3493B500F8B19E /* UserSignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F45CEA321D3493B500F8B19E /* UserSignUpVC.m */; };
 		F4B9E13A1D29831400A0C4B9 /* AWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */; };
 		F4B9E1411D29869800A0C4B9 /* dialCell_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13B1D29869800A0C4B9 /* dialCell_2.xib */; };
 		F4B9E1421D29869800A0C4B9 /* dialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B9E13C1D29869800A0C4B9 /* dialCell.xib */; };
@@ -59,6 +62,12 @@
 		E7ECF0C21B7DD45F0087E302 /* DrawPicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ECF0C71B7DD45F0087E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7ECF0C81B7DD45F0087E302 /* DrawPicAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPicAppTests.m; sourceTree = "<group>"; };
+		F45CEA2C1D34921900F8B19E /* UserLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLoginVC.h; sourceTree = "<group>"; };
+		F45CEA2D1D34924D00F8B19E /* UserLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginVC.m; sourceTree = "<group>"; };
+		F45CEA2F1D34925F00F8B19E /* UserLogoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLogoutVC.h; sourceTree = "<group>"; };
+		F45CEA301D34928800F8B19E /* UserLogoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogoutVC.m; sourceTree = "<group>"; };
+		F45CEA321D3493B500F8B19E /* UserSignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSignUpVC.m; sourceTree = "<group>"; };
+		F45CEA341D3493D100F8B19E /* UserSignUpVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSignUpVC.h; sourceTree = "<group>"; };
 		F4B8DE031D2DE312003C1415 /* secret.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secret.pch; sourceTree = "<group>"; };
 		F4B9E1381D29831400A0C4B9 /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
 		F4B9E1391D29831400A0C4B9 /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
@@ -130,11 +139,17 @@
 			children = (
 				E7ECF0B01B7DD45F0087E302 /* AppDelegate.h */,
 				E7ECF0B11B7DD45F0087E302 /* AppDelegate.m */,
-				F4B8DE031D2DE312003C1415 /* secret.pch */,
+				F45CEA2C1D34921900F8B19E /* UserLoginVC.h */,
+				F45CEA2D1D34924D00F8B19E /* UserLoginVC.m */,
+				F45CEA2F1D34925F00F8B19E /* UserLogoutVC.h */,
+				F45CEA301D34928800F8B19E /* UserLogoutVC.m */,
+				F45CEA341D3493D100F8B19E /* UserSignUpVC.h */,
+				F45CEA321D3493B500F8B19E /* UserSignUpVC.m */,
 				E7ECF0B31B7DD45F0087E302 /* ViewController.h */,
 				E7ECF0B41B7DD45F0087E302 /* ViewController.m */,
 				F4B9E1471D29872C00A0C4B9 /* UserProfileVC.h */,
 				F4B9E1481D29872C00A0C4B9 /* UserProfileVC.m */,
+				F4B8DE031D2DE312003C1415 /* secret.pch */,
 				E7ECF0B61B7DD45F0087E302 /* Main.storyboard */,
 				F4CC840F1D24427B009AB387 /* zo59nari.Storyboard */,
 				E7ECF0B91B7DD45F0087E302 /* Images.xcassets */,
@@ -353,8 +368,11 @@
 			files = (
 				F4B9E13A1D29831400A0C4B9 /* AWCollectionViewDialLayout.m in Sources */,
 				F4B9E1491D29872C00A0C4B9 /* UserProfileVC.m in Sources */,
+				F45CEA2E1D34924D00F8B19E /* UserLoginVC.m in Sources */,
 				E7ECF0B51B7DD45F0087E302 /* ViewController.m in Sources */,
 				E7ECF0B21B7DD45F0087E302 /* AppDelegate.m in Sources */,
+				F45CEA311D34928800F8B19E /* UserLogoutVC.m in Sources */,
+				F45CEA331D3493B500F8B19E /* UserSignUpVC.m in Sources */,
 				E7ECF0AF1B7DD45F0087E302 /* main.m in Sources */,
 				E53EEEFC1D25A4F800785FDD /* XXXRoundMenuButton.m in Sources */,
 			);
